@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#100b1d"><title>ResumeAI — Make your next move</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css', v='6') }}">
+</head>
+<body class="home-page">
+  <header class="home-nav"><a class="logo logo-light" href="{{ url_for('home') }}"><span class="logo-icon">✳</span> Resume<span>AI</span></a><nav><a href="#features">Features</a><a href="{{ url_for('auth', mode='login') }}">Login</a><a class="nav-cta" href="{{ url_for('auth', mode='signup') }}">Get Started <span>↗</span></a></nav></header>
+  <main>
+    <section class="home-hero">
+      <div class="hero-glow glow-a"></div><div class="hero-glow glow-b"></div>
+      <div class="hero-copy-home"><div class="ai-badge"><span>✦</span> &nbsp;Resume insights for your next move</div>
+        <h1>Make your resume work<br>for your <span>next opportunity.</span></h1>
+        <p>Compare your experience with the role you want. See your matching skills and get clear suggestions for your next edit.</p>
+        <div class="hero-actions"><a class="button button-primary" href="{{ url_for('auth', mode='signup') }}">Get Started <span>→</span></a><a class="button button-quiet" href="#features">See features <span>↓</span></a></div>
+        <div class="trust-line"><span class="trust-check">✓</span> Private resume review <b>·</b> Your upload is not saved</div>
+      </div>
+    </section>
+    <section class="feature-section" id="features"><div class="section-intro"><span class="section-kicker">A CLEARER PICTURE</span><h2>Make every detail <span>work for you.</span></h2><p>Practical insights to help you show up with confidence.</p></div>
+      <div class="feature-grid"><article class="feature-card"><div class="feature-icon icon-violet">ϟ</div><span class="feature-count">01 / FAST</span><h3>Quick, thoughtful analysis</h3><p>See key information from your resume in seconds, from sections to skills and notable keywords.</p></article><article class="feature-card"><div class="feature-icon icon-blue">↗</div><span class="feature-count">02 / TARGETED</span><h3>Role skill alignment</h3><p>Compare your resume with a job description to spot the skills that match and those to highlight.</p></article><article class="feature-card"><div class="feature-icon icon-pink">✧</div><span class="feature-count">03 / ACTIONABLE</span><h3>Ideas for your next edit</h3><p>Get useful suggestions to make achievements clearer and your experience easier to scan.</p></article></div>
+    </section>
+    <section class="home-cta"><div><span class="section-kicker">YOUR NEXT STEP STARTS HERE</span><h2>Ready to see your resume<br>in a new light?</h2></div><a class="button button-primary" href="{{ url_for('auth', mode='signup') }}">Create your free account <span>→</span></a></section>
+  </main>
+  <footer class="home-footer"><a class="logo logo-light" href="{{ url_for('home') }}"><span class="logo-icon">✳</span> Resume<span>AI</span></a><span>Useful feedback for your next career move.</span><span>© 2026 ResumeAI</span></footer>
+</body>
+</html>
